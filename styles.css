@@ -387,3 +387,34 @@ h2 {
 #skill-17 {
     animation-delay: 1.7s;
 }
+/* Article Block Styling */
+.article-block {
+    background-color: #1c1c1c; /* Matches the dark background of your other sections */
+    border: 1px solid #333; /* Dark border that blends with the dark theme */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px; /* Rounded corners for consistency with other sections */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.article-block a {
+    text-decoration: none;
+    color: #00aaff; /* Neon blue color to match links throughout the website */
+    font-size: 1.2rem; /* Slightly larger text for the title */
+}
+
+.article-block:hover {
+    background-color: #333; /* Darker background on hover for contrast */
+}
+
+.article-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #f0f0f0; /* White text color for the title */
+}
+
+.article-date {
+    font-size: 1rem;
+    color: #888; /* Light grey for the date to keep it subtle */
+    margin-top: 5px;
+}
