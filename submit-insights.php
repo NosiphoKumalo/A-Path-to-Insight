@@ -1,15 +1,14 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get form data
-    $name = $_POST['insight-name'];
-    $email = $_POST['insight-email'];
-    $message = $_POST['insight-message'];
+    $name = $_POST['user-name'];  // Matches the HTML field name
+    $insight = $_POST['user-insight'];  // Matches the HTML field name
 
     // Email details
-    $to = "kumalonosipho1@gmail.com"; // Replace with your email address
+    $to = "kumalonosipho1@gmail.com";  // Replace with your email address
     $subject = "New Insight Submission from $name";
-    $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
-    $headers = "From: $email";
+    $body = "Name: $name\n\nInsight:\n$insight";
+    $headers = "From: no-reply@yourdomain.com";  // Replace with your domain email
 
     // Send email
     if (mail($to, $subject, $body, $headers)) {
